@@ -1,2 +1,7 @@
 
-https://drive.google.com/file/d/18zGwGjqICYPZXzjzInC6wDYWA18tqOzX/
+batch_size = 8
+https://drive.google.com/file/d/13t1_KOYvHzp0ZDJczJzrPm2TCvIqeQkR/view?usp=sharing
+
+
+batch_size = 4 & add other dataset
+https://drive.google.com/file/d/15K79-dEDdrDVqj4wzxLPNfZ671wujpMw/view
