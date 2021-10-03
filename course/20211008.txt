@@ -1,0 +1,30 @@
+
+= 午 =
+
+1. BERT 原理 / 應用
+2. QA 說明 (基於BERT原理)
+3. 常用軟體
+
+
+= 晚 =
+1. code 示範
+2. coding
+ --> Q & A
+3. 評估不同參數 (model) 成效
+
+<留時間問問題>
+
+
+2021/10/22
+
+= 午 =
+1. 導入 DRCD 做練習
+https://github.com/DRCKnowledgeTeam/DRCD
+ - training
+   - JSON parsing
+ - 
+
+= 晚 =
+
+
+<留時間問問題>
