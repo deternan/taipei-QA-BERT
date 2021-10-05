@@ -1,13 +1,20 @@
 
 = 午 =
 
+
 1. BERT 原理 / 應用
+ --> Transformers
 2. QA 說明 (基於BERT原理)
-3. 常用軟體
+3. 常用軟體 / 平台
+ • Google Colab
+ • Kaggle Notebook
+4. 寫 code 前置作業 
+ - git 
+ 
 
 
 = 晚 =
-1. code 示範
+1. code 示範與說明
 2. coding
  --> Q & A
 3. 評估不同參數 (model) 成效
