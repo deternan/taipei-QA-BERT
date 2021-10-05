@@ -31,6 +31,7 @@ if __name__ == "__main__":
     model.eval()
 
     #
+    '''
     q_inputs = ['為何路邊停車格有編號的要收費，無編號的不用收費','債權人可否向稅捐稽徵處申請查調債務人之財產、所得資料','想做大腸癌篩檢，不知如何辨理']
     for q_input in q_inputs:
         bert_ids = to_bert_ids(tokenizer,q_input)
@@ -48,4 +49,23 @@ if __name__ == "__main__":
         print(q_input)
         print(ans_label)
         print()
+    '''
 
+    while True:
+        inputQuery = input()
+        #print("Nice to meet you, " + yourName)
+        bert_ids = to_bert_ids(tokenizer, inputQuery)
+        assert len(bert_ids) <= 512
+        input_ids = torch.LongTensor(bert_ids).unsqueeze(0)
+
+        # predict
+        outputs = model(input_ids)
+        predicts = outputs[:2]
+        predicts = predicts[0]
+        max_val = torch.max(predicts)
+        label = (predicts == max_val).nonzero().numpy()[0][1]
+        ans_label = answer_dic.to_text(label)
+
+        print(inputQuery)
+        print(ans_label)
+        print()
